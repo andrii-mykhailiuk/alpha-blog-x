@@ -57,8 +57,8 @@ USER rails:rails
 # Entrypoint prepares the database.
 ENTRYPOINT ["/rails/bin/docker-entrypoint"]
 
-# Magic line
-RUN rails db:migrate
+# # Magic line
+# RUN rails db:migrate
 
 # Start the server by default, this can be overwritten at runtime
 EXPOSE 3000
